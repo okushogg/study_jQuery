@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>vue test</title>
+    <link rel="stylesheet" href="css/practice.css">
   </head>
+
   <body>
-    <div id="app">
+    <!-- section11 -->
+    <!-- <div id="app">
       <form>
-        <input type="text" v-model="message" />
+        <input type="text" v-model="message"  />
         <p>Message is {{ message }}</p>
         <p>{{count}}</p>
         <p>{{user.prefecture}}</p>
         <p>{{colors[1]}}</p>
 
       </form>
+    </div> -->
+
+    <!-- section16 v-if -->
+    <!-- <div id="app">
+      <p v-if="toggle"> Hello! </p>
+    </div> -->
+
+    <!-- section 16 v-for
+    <div id="color">
+     <ol>
+       <li v-for="color in colors">{{ color }}</li>
+     </ol>
     </div>
-    <!-- ViewModelはid設定した要素より後ろで読み込む -->
+
+    <div id="user">
+      <ul>
+        <li v-for="(v, k) in user">
+          {{ k }} : {{ v }}
+        </li>
+      </ul>
+    </div> -->
+
+
+    <!-- section 19 v-on
+    <div id="app">
+      <button v-on:click="onClick">Click!</button>
+      <p>{{ now }}</p>
+    </div> -->
+
+    <!-- section 20 v-model
+    <div id="app">
+      <p><input type="text" v-model="message"></p>
+      <p><input type="text" v-model="message"></p>
+      <pre>{{ $data }}</pre>
+    </div> -->
+
+    <div id="app">
+      <hello-component></hello-component>
+    </div>
 
     <script src="https://unpkg.com/vue@3.1.5"></script>
     <script src="js/practice.js"></script>
