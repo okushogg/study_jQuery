@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- 外部CSS/JavaScript -->
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <script src="js/main.js"></script>
+    <meta charset="UTF-8" />
+    <title>vue test</title>
   </head>
   <body>
-    <button id="btnAjax">ajax</button>
-    <div id="target"></div>
+    <div id="app">
+      <form>
+        <input type="text" v-model="message" />
+        <p>Message is {{ message }}</p>
+        <p>{{count}}</p>
+        <p>{{user.prefecture}}</p>
+        <p>{{colors[1]}}</p>
+
+      </form>
+    </div>
+    <!-- ViewModelはid設定した要素より後ろで読み込む -->
+
+    <script src="https://unpkg.com/vue@3.1.5"></script>
+    <script src="js/practice.js"></script>
   </body>
 </html>
