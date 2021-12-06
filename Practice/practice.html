@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>vue test</title>
-    <link rel="stylesheet" href="css/practice.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>vue practice</title>
+    <link rel="stylesheet" href="css/practice.css" />
   </head>
 
   <body>
@@ -40,7 +40,6 @@
       </ul>
     </div> -->
 
-
     <!-- section 19 v-on
     <div id="app">
       <button v-on:click="onClick">Click!</button>
@@ -54,8 +53,14 @@
       <pre>{{ $data }}</pre>
     </div> -->
 
+    <!-- section21
     <div id="app">
       <hello-component></hello-component>
+    </div> -->
+
+    <div id="app">
+      <p v-cloak>{{ message }}</p>
+      <button v-on:click="clickHandler">Click!</button>
     </div>
 
     <script src="https://unpkg.com/vue@3.1.5"></script>
