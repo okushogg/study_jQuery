@@ -54,3 +54,11 @@
 	.pb_staff_list-description { margin-bottom: 40px; }
 	.pb_staff_list-career { font-size: 14px; }
 }
+
+.frame {
+	position: relative;
+	display: inline-block;
+	border-radius: 50%;
+	width: 250px;
+	height: 250px;
+}
