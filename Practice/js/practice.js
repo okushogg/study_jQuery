@@ -93,3 +93,14 @@ const app = Vue.createApp({
   },
 });
 app.mount("#app");
+
+$(function() {
+ 
+  //マウスを乗せたら発動
+  $('#test').hover(function() {
+ 
+    //マウスを乗せたら色が変わる
+    $(this).css('display', 'none');
+ 
+  });
+});
