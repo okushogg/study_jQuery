@@ -94,13 +94,16 @@ const app = Vue.createApp({
 });
 app.mount("#app");
 
-$(function() {
- 
+$(function () {
   //マウスを乗せたら発動
-  $('#test').hover(function() {
- 
-    //マウスを乗せたら色が変わる
-    $(this).css('display', 'none');
- 
-  });
+  $("#test").hover(
+    function () {
+      //マウスを乗せたら色が変わる
+      $(this).css("display", "none");
+    },
+    function () {
+      //マウス外したら色が戻る
+      $(this).css("display", "block");
+    }
+  );
 });
