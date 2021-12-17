@@ -107,3 +107,11 @@ $(function () {
     }
   );
 });
+
+$(function(){
+  $('#accordion').click(
+    function(){
+      $(this).
+    }
+  )
+})
