@@ -227,3 +227,31 @@
   border-top: 1px solid #aaa;
 }
 
+.ac {
+  width: 100%;
+  max-width: 600px;
+  margin: 50 auto;
+}
+
+/* クリック領域 */
+.ac-parent {
+  height: 50px;
+  max-width: 200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+  background-color: #f97148;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+/* クリックしたら表示される領域 */
+.ac-child {
+  display: none;
+  max-width: 200ppx;
+  margin: 0 auto;
+  padding: 2em 1em;
+  background-color: #ffccbc;
+  text-align: center;
+}

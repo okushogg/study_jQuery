@@ -108,10 +108,16 @@ $(function () {
   );
 });
 
-$(function(){
-  $('#accordion').click(
-    function(){
-      $(this).
-    }
-  )
-})
+// $(function(){
+//   $('#accordion').click(
+//     function(){
+//       $(this).
+//     }
+//   )
+// })
+
+$(function () {
+  $(".ac-parent").on("click", function () {
+    $(this).next().slideToggle();
+  });
+});
