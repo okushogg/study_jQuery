@@ -82,17 +82,17 @@
 // })
 // app.mount('#app')
 
-const app = Vue.createApp({
-  data: () => ({
-    message: "Hello, Vue.js!",
-  }),
-  methods: {
-    clickHandler: function (event) {
-      this.message = this.message.split("").reverse().join("");
-    },
-  },
-});
-app.mount("#app");
+// const app = Vue.createApp({
+//   data: () => ({
+//     message: "Hello, Vue.js!",
+//   }),
+//   methods: {
+//     clickHandler: function (event) {
+//       this.message = this.message.split("").reverse().join("");
+//     },
+//   },
+// });
+// app.mount("#app");
 
 $(function () {
   //マウスを乗せたら発動
@@ -121,3 +121,16 @@ $(function () {
     $(this).next().slideToggle();
   });
 });
+
+const app = Vue.createApp({
+  data: () => ({
+    message: "abcd",
+  }),
+  computed: {
+    reversedMessage: function () {
+      return this.message.split("").reverse().join("");
+    },
+  },
+});
+
+app.mount("#app");
