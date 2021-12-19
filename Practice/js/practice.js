@@ -122,15 +122,15 @@ $(function () {
   });
 });
 
-const app = Vue.createApp({
-  data: () => ({
-    message: "abcd",
-  }),
-  computed: {
-    reversedMessage: function () {
-      return this.message.split("").reverse().join("");
-    },
-  },
-});
+// const app = Vue.createApp({
+//   data: () => ({
+//     message: "abcd",
+//   }),
+//   computed: {
+//     reversedMessage: function () {
+//       return this.message.split("").reverse().join("");
+//     },
+//   },
+// });
 
-app.mount("#app");
+// app.mount("#app");
